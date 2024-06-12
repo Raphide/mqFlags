@@ -1,0 +1,46 @@
+@use './partials/mixins' as q;
+
+body {
+    height:300px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    @include q.small-tablet {
+        flex-direction: column;
+    }
+}
+
+.flag {
+    height: 100%;
+    width: 100%;
+    flex: 1fr, 1fr, 1fr;
+    
+&--one {
+    background-color: #009A44;
+    @include q.small-tablet {
+        background-color: #2D2926;
+    }
+    @include q.tablet {
+        background-color: #2D2926;
+    }
+}
+&--two {
+    background-color: white;
+    @include q.small-tablet {
+        background-color: #C8102E;
+    }
+    @include q.tablet {
+        background-color: #FFCD00;
+    }
+}
+&--three {
+    background-color: #FF8200;
+    @include q.small-tablet {
+        background-color: #FFCD00;
+    }
+    @include q.tablet {
+        background-color: #C8102E;
+    }
+}
+}
+

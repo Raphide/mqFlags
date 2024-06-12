@@ -1,0 +1,58 @@
+body {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.flag {
+  height: 100%;
+  width: 100%;
+  flex: 1fr, 1fr, 1fr;
+}
+.flag--one {
+  background-color: #009A44;
+}
+@media screen and (max-width: 600px) {
+  .flag--one {
+    background-color: #2D2926;
+  }
+}
+@media screen and (max-width: 900px) {
+  .flag--one {
+    background-color: #2D2926;
+  }
+}
+.flag--two {
+  background-color: white;
+}
+@media screen and (max-width: 600px) {
+  .flag--two {
+    background-color: #C8102E;
+  }
+}
+@media screen and (max-width: 900px) {
+  .flag--two {
+    background-color: #FFCD00;
+  }
+}
+.flag--three {
+  background-color: #FF8200;
+}
+@media screen and (max-width: 600px) {
+  .flag--three {
+    background-color: #FFCD00;
+  }
+}
+@media screen and (max-width: 900px) {
+  .flag--three {
+    background-color: #C8102E;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
